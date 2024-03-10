@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.border{
+    background-color: rgb(197, 195, 195);
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.border-content{
+    width: 80%;
+    font-size: 1.1rem;
+}
+
+/* login section styling */
+
+.login-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.login-container{
+    width: 85%;
+    display: flex;
+    gap: 20px;
+}
+.login-box{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    padding: 20px;
+    gap: 15px;
+}
+.login-box input{
+    width: 500px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+.login-box button{
+    padding: 14px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+}
+.login-box button:hover{
+    background: transparent;
+    color: red;
+    border: 1px solid red;
+}
+
+/* account box styling */
+
+.account-box{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    padding: 20px;
+    gap: 15px;
+}
+
+.account-box input{
+    width: 530px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.account-box button{
+    padding: 14px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 170px;
+}
+.account-box button:hover{
+    background: transparent;
+    color: red;
+    border: 1px solid red;
+}
+
+
+/* responsiven login page */
+
+@media(max-width:900px)
+{
+    .login-container{
+        width: 85%;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .account-box input{
+        width: 100%;
+    }
+    
+    .login-box input{
+        width: 100%;
+        padding: px;
+    }
+    .border{
+        padding: 12px;
+    }
+    
+}

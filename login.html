@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log-in</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+      <!-- animation  -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+
+</head>
+<body>
+    <section class="nav-section">
+        <div class="logo">
+            <img src="./img/logo.svg" alt="logo iamge">
+        </div>
+
+        <nav>
+            <ul id="menu-list">
+                <li ><a href="index.html" class="nav-item">Home</a></li>
+                <li ><a href="shop.html" class="nav-item">Shop</a></li>
+                <li ><a href="account.html" class="nav-item">MyAccount</a></li>
+                <li ><a href="login.html" class="nav-item">Login</a></li>
+                <i class="fas fa-close close-icon" onclick="closeMenu()"></i>
+            </ul>
+
+                 <i class="fas fa-bars open-icon" onclick="openMenu()"></i>
+        </nav>
+
+        <div class="nav-right-part">
+
+            <div class="input-box">
+                <input type="text" placeholder="Search for items...">
+                <img src="./img/search.png" alt="search image">
+            </div>
+            <i><img src="./img/icon-heart.svg" alt="heart-icon" class="nav-icon"></i>
+            <i><img src="./img/icon-cart.svg" alt="cart-icon" class="nav-icon"></i>
+        </div>
+
+     </section>
+
+    <div class="border">
+        <div class="border-content">
+            <p>Home  >  Login/Register</p>
+        </div>
+    </div>
+
+    <!-- login and sign up -->
+
+    <div class="login-section">
+          <div class="login-container">
+
+            <div class="login-box">
+                <h2>Login</h2>
+                 <input type="text" placeholder="Your Email">
+                 <input type="password" placeholder="password">
+                 <button>Login</button>
+            </div>
+
+            <div class="account-box">
+                <h2>Create an Account</h2>
+                <input type="text" placeholder="Username">
+                <input type="email" placeholder="Your Email">
+                <input type="password" placeholder="password">
+                <input type="password" placeholder="Conform Password">
+                <button>Submit and Register</button>
+            </div>
+
+          </div>
+    </div>
+
+     <!-- footer section -->
+
+     <div class="footer-header">
+        <div class="email-box">
+            <img src="./img/icon-email.svg" alt="email-icon" class="email-img">
+            <h3>Sign Up to Newsletter</h3>
+        </div>
+        <div>
+            <h3 class="sp-heading">...Receive $50 coupon for the First Shopping.</h3>
+        </div>
+        <div>
+            <div class="sp-input">
+                <input type="text" placeholder="Enter Your Email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </div>
+    <!-- footer section -->
+
+    <footer class="footer">
+        <div>
+            <h2>
+                <img src="./img/logo.svg" alt="logo image" class="footer-logo">
+            </h2>
+
+             <div  class="personal-info-div" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+                <p>Contact</p>
+                <p><b>Address: </b>123 Waltan Road,Street no 32,Lahore</p>
+                <p><b>Phone: </b>+321 766 987 ,(+92)543 876 432</p>
+                <p><b>Hours: </b> 10:00-18:00 Mon-Sat</p>
+                <p>Follow Me</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a> 
+                    <a href=""><i class="fa-brands fa-instagram"></i></a> 
+                    <a href=""><i class="fa-brands fa-twitter"></i></a> 
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a> 
+                  </div>
+             </div>
+        </div>
+        <!-- ------ -->
+        <div>
+            <h2 class="footer-col-heading">Address</h2>
+           <ul>
+            <li>About Us</li>
+            <li>Delivery Information</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+            <li>Contact Us</li>
+            <li>Support Center</li>
+           </ul>
+        </div>
+
+        <!-- ---- -->
+        <div>
+            <h2 class="footer-col-heading">My Account</h2>
+            <ul>
+             <li>Sign in</li>
+             <li>View Cart</li>
+             <li>My wishlist</li>
+             <li>Ttrack My Order</li>
+             <li>Help</li>
+             <li>Other</li>
+            </ul>
+        </div>
+        <!-- ----- -->
+        <div class="payment-div">
+            <h2 class="footer-col-heading">Secured Payment Gateways Method</h2>
+             <div>
+                <img src="./img/payment-method.png" alt="">
+             </div>
+        </div>
+    </footer>
+      <!-- ------- -->
+      
+         <!-- responsive navbar -->
+         <script>
+            const menulist = document.getElementById('menu-list') ;
+
+            function openMenu()
+             {
+               menulist.style.right='0px' ;
+             }
+
+              function closeMenu()
+             {
+              menulist.style.right='-200px' ;
+             }
+           </script>
+
+           
+         <!-- animation link -->
+         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+         <script>
+           AOS.init();
+         </script>
+</body>
+</html>
